@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/Where-is-Waldo/static/js/main.eb3ab5be.js",
+    "static/media/game1.jpg": "/Where-is-Waldo/static/media/game1.314cec99f414807b7e27.jpg",
+    "static/media/Cortana.png": "/Where-is-Waldo/static/media/Cortana.c12072449a6c33188562.png",
+    "static/media/Dio.png": "/Where-is-Waldo/static/media/Dio.46c46af826921c5d69c4.png",
+    "static/media/CC.png": "/Where-is-Waldo/static/media/CC.45f77c2240c583407367.png",
+    "static/media/Tom.png": "/Where-is-Waldo/static/media/Tom.7daefc1d68c225675638.png",
+    "static/media/Aang.webp": "/Where-is-Waldo/static/media/Aang.4fa9568381429bf2ba18.webp",
+    "index.html": "/Where-is-Waldo/index.html",
+    "main.eb3ab5be.js.map": "/Where-is-Waldo/static/js/main.eb3ab5be.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.eb3ab5be.js"
+  ]
+}
