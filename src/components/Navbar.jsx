@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import VideogameAssetIcon from "@mui/icons-material/VideogameAsset";
 
-export default function Navbar({ characters }) {
+export default function Navbar({ characters, timer, formatTime }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -20,8 +20,11 @@ export default function Navbar({ characters }) {
   return (
     <AppBar position="sticky" sx={{ flexGrow: 1, bgcolor: "black" }}>
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
           Waldo<strong style={{ color: "red" }}>Game</strong>
+        </Typography>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          {formatTime(timer)}
         </Typography>
         <Button
           id="basic-button"
@@ -52,6 +55,7 @@ export default function Navbar({ characters }) {
           {characters &&
             characters.map((character) => (
               <MenuItem
+                key={character.name}
                 sx={{
                   width: 400,
                   ...(character.found && { filter: "grayscale(100%)" }),
